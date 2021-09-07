@@ -4,9 +4,12 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
+
+
     <groupId>org.ubaifadhli.future</groupId>
     <artifactId>poke-data-processor-plugin</artifactId>
-    <version>1.0.1</version>
+    <packaging>maven-plugin</packaging>
+    <version>1.0.2</version>
 
     <name>Poke Data Processor Plugin</name>
     <description>A simple Maven plugin to process data from CSV or properties to Cucumber feature file.</description>
