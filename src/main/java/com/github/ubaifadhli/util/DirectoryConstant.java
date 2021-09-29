@@ -1,4 +1,4 @@
-package org.ubaifadhli.future.util;
+package com.github.ubaifadhli.util;
 
 public interface DirectoryConstant {
     String BASE_TEST_RESOURCES = "src/test/resources/";

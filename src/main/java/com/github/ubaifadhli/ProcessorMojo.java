@@ -1,14 +1,14 @@
-package org.ubaifadhli.future;
+package com.github.ubaifadhli;
 
+import com.github.ubaifadhli.util.TextProcessor;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.maven.plugin.AbstractMojo;
 import org.apache.maven.plugin.MojoExecutionException;
 import org.apache.maven.plugin.MojoFailureException;
 import org.apache.maven.plugins.annotations.LifecyclePhase;
 import org.apache.maven.plugins.annotations.Mojo;
-import org.ubaifadhli.future.util.DirectoryConstant;
-import org.ubaifadhli.future.util.FileHelper;
-import org.ubaifadhli.future.util.TextProcessor;
+import com.github.ubaifadhli.util.DirectoryConstant;
+import com.github.ubaifadhli.util.FileHelper;
 
 import java.io.IOException;
 import java.nio.file.Path;

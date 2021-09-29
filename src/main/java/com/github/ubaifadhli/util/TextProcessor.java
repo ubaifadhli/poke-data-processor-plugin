@@ -1,4 +1,4 @@
-package org.ubaifadhli.future.util;
+package com.github.ubaifadhli.util;
 
 import java.io.IOException;
 import java.nio.file.Files;
