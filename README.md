@@ -22,7 +22,7 @@ Add this snippet into your `pom.xml` file. `<pluginRepositories>` tag is needed 
             <plugin>
                 <groupId>org.ubaifadhli.future</groupId>
                 <artifactId>poke-data-processor-plugin</artifactId>
-                <version>1.0.6</version>
+                <version>1.0.8</version>
                 <executions>
                     <execution>
                         <id>process-data</id>
