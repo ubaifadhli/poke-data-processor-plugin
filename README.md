@@ -2,48 +2,21 @@
 
 A simple Maven plugin to populate Cucumber feature files with provided data from properties.
 
+Published on JitPack.
+
 ## Prerequisites
-- Your testing project uses Cucumber
-- You have an GitHub account
+- Your testing project uses Cucumber and generates JSON as an output
 
 ## Usage Guide
-Create `settings.xml` file in `~/.m2/` directory and copy the snippet below. If you already have one, adjust accordingly. 
+Add this snippet into your `pom.xml` file. `<pluginRepositories>` tag is needed because I use JitPack to publish this plugin.
 ```
-<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
-                      http://maven.apache.org/xsd/settings-1.0.0.xsd">
-
-  <activeProfiles>
-    <activeProfile>github</activeProfile>
-  </activeProfiles>
-
-  <profiles>
-    <profile>
-      <id>github</id>
-      <pluginRepositories>
+    <pluginRepositories>
         <pluginRepository>
-          <id>github</id>
-          <url>https://maven.pkg.github.com/ubaifadhli/*</url>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
         </pluginRepository>
-      </pluginRepositories>
-    </profile>
-  </profiles>
+    </pluginRepositories>
 
-  <servers>
-    <server>
-      <id>github</id>
-      <username>YOUR_GITHUB_USERNAME</username>
-      <password>YOUR_GITHUB_PERSONAL_ACCESS_TOKEN</password>
-    </server>
-  </servers>
-</settings>
-```
-Note that the snippet uses `pluginRepositories` instead of the usual `repositories` because this project will be used as a Maven plugin.
-Also paste your GitHub username and PAT there. Your GitHub PAT also needs to have `read:packages` scope access (more about this [here](https://docs.github.com/en/packages/learn-github-packages/about-permissions-for-github-packages#about-scopes-and-permissions-for-package-registries)). 
-
-After that, include the plugin into your project by adding this snippet into your `pom.xml` file.
-```
     <build>
         <plugins>
             <plugin>
